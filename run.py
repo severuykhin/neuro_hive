@@ -12,6 +12,7 @@ from key import KEY
 # Modules
 from gender_by_name.module import GenderByName
 from cats_vs_dogs.module import CatsVsDogs
+from eye_glasses.module import EyeGlasses
 
 import pathlib
 
@@ -19,7 +20,8 @@ import pathlib
 bot = telebot.TeleBot(KEY)
 modules = {
     'cats_vs_dogs': CatsVsDogs, 
-    'gender_by_name': GenderByName
+    'gender_by_name': GenderByName,
+    'eye_glasses': EyeGlasses
 }
 
 args = sys.argv

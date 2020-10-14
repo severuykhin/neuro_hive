@@ -23,6 +23,3 @@ model.summary()
 # Check model accuracy after training
 loss, acc = model.evaluate(test_batches, verbose=1)
 print("Model accuracy: {:5.2f}%".format(100*acc))
-
-# Save model weight for reuse
-model.save_weights()
